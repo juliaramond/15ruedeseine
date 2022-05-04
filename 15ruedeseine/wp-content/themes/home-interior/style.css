@@ -1,0 +1,209 @@
+/*
+Theme Name: Home Interior
+Theme URI: https://awplife.com/wordpress-themes/wpbusinesspress-premium/
+Template: awpbusinesspress
+Author: A WP Life
+Author URI: http://awplife.com/
+Description: Home Interior is a responsive and fully customizable theme to Create Home Designs websites. This theme is lightweight, it will enable you to create almost any type of website such a market, market cap, crypto, currency, clean business, blogs, news, magazines, constructions, electronics, Restaurants & Grocery, corporate, agency, business promotion, industries, Beauty saloon, high photography, Express way, Business Press, Generate coins, gym, health care, medical, wedding startups, business agencies, law firms, education & schools, university, restaurant & hotels, Minimal shops, hospital medical care, client consulting, booking travels, coming soon website. It is very fast and responsive for creating beautiful fast-loading and accessible websites which is never underestimate. This theme has Slider, Service, Theme Options, Testimonial, Call Out & Popular Blogging Section. Home Interior is RTL & translation ready. The theme is fully responsive and compatible with popular WordPress plugins like Elementor Page Builder, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, Gutenberg, Block-Enabled, Polylang, WooCommerce, Custom Colors, Blocks, WPML, Yoast SEO, Jetpack, SiteOrigin, Contact Form 7, Mailchimp for WordPress, bbPress, Demo Importer, WPForms and more. Whether you’re running an online shopping market or setting up your Shopping website, Home Interior Theme gives everything you need for your Market to shine online. Because The theme is for any inspirational business. Go Check Demo: https://awplife.com/demo/home-interior-premium/
+Tags: blog, portfolio, e-commerce, grid-Layout, microformats, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready
+Version: 0.0.2
+Tested up to: 5.9
+Requires PHP: 5.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: home-interior
+*/
+
+/*Important For WP COLOR SETTINGS*/
+.navbar-overlap .main-navigation .menu .current-menu-item>a,
+.navbar-overlap .main-navigation .menu .current-menu-ancestor>a, 
+.navbar-overlap .main-navigation .menu .current-menu-parent>a{
+	color: #ffc000;
+}
+.navbar-overlap .main-navigation .menu>li .sub-menu>li.current-menu-item>a, 
+.navbar-overlap .main-navigation .menu>li .sub-menu>li.current-menu-ancestor>a,
+.navbar-overlap .main-navigation .menu>li .sub-menu>li.current-menu-parent>a{
+	color: #ffc000;
+}
+
+
+/*Under Line Text*/
+.color-accent, .color-accent-hover:hover,
+.color-accent-hover:focus, :root .has-accent-color, 
+.has-drop-cap:not(:focus):first-letter, 
+.wp-block-button.is-style-outline, a {
+    color: #ffc000;
+}
+
+
+#slider-demo.overlay-none .slider-caption .caption-content{
+	background-color: rgb(0 0 0 / 0%);
+}
+
+.service-one .post {
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+.service-one .service-box .entry-title a{
+	color: #000 !important;
+}
+.service-one .service-box .entry-title a:hover{
+	color: #FFC000 !important;
+}
+
+
+.service-one .post { 
+	background-color: #ffffff;
+	/* border-left: none; */
+	position: relative; 
+	margin: 0px 0 50px; 
+	padding: 50px 30px 50px; 
+	font-size: 1.000rem;
+	line-height: 1.75;
+	border-radius: 2px;
+	font-style: normal;
+	/* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
+	transition: 0.3s;
+	/* -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); 
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); 
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1); */
+	-webkit-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	transform: translateY(0px);	
+	border: 1px solid #e7e7e7;
+}
+.service-one .post:hover { 
+	-webkit-box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.1); 
+	-moz-box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.1);
+	-ms-box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.1); 
+	box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.1);
+	-webkit-transform: translateY(-7px);
+	-ms-transform: translateY(-7px);
+	transform: translateY(-7px);
+}
+
+.service-one .post:before {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    height: 4px;
+    width: 0px;
+    background-color: #5ca2df;
+    transition: all 500ms ease;
+    left: 0px;
+}
+.service-one .post:after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    height: 4px;
+    width: 0px;
+    background-color: #5ca2d;
+    transition: all 500ms ease;
+    right: 0px;
+}
+.service-one .post:hover:after, 
+.service-one .post:hover:before {width: 100%;transition: all 500ms ease;}
+
+
+/*Default Widget CSS*/
+address {
+    margin: 0 0 1.6rem;
+    line-height: 2;
+}
+.footer .widget address {
+    color: #fff;
+}
+
+address i {
+    width: 1.563rem;
+    height: auto;
+    margin-right: 0.438rem;
+    font-size: 1.25rem !important;
+}
+
+
+/*Parent Theme Slider Font */
+.fa-long-arrow-left:before {
+    content: "\f177" !important;
+}
+.fa-long-arrow-right:before {
+    content: "\f178" !important;
+}
+
+/*Calendar Next Prev CSS */
+.site-footer .calendar_wrap .wp-calendar-nav-prev a {
+	background: linear-gradient(to right, #ffc0009e, #ffc00026);
+	color: #fff;
+}
+.site-footer .calendar_wrap .wp-calendar-nav-prev a:hover {
+	background: linear-gradient(to right, #ffc00026, #ffc0005c);
+	color: #fff;
+}
+
+.site-footer .calendar_wrap .wp-calendar-nav-next a{
+	background: linear-gradient(to right, #ffc00026, #ffc0005c);
+	color: #fff;
+}
+
+.site-footer .calendar_wrap .wp-calendar-nav-next a:hover{
+	
+	background: linear-gradient(to right, #ffc0009e, #ffc00026);
+	color: #fff;
+}
+
+
+
+/*Home Interior Design 4 */
+
+@media (max-width: 768px){
+	#slider-demo.overlay-disable .slider-caption .title{
+		font-size: 2rem;
+	}
+	.slider-caption .subtitle{
+		margin-bottom: .5rem;
+		margin: 0 0 5px;
+	}
+	.m-top-40 {
+    margin-top: 20px !important;
+	}
+	.btn-large{
+		padding: 0.513rem 1.5rem;
+	}
+}
+
+@media (max-width: 480px){
+#slider-demo.overlay-disable .slider-caption .title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+	}
+	.slider-caption .subtitle{
+		margin-bottom: 0.9rem;
+	}
+	#slider-demo.overlay-disable .slider-caption .caption-content{
+		padding: 10px 10px 10px;
+	}
+	
+		#slider-demo.overlay-disable .slider-caption p {
+    font-size: .8rem;
+	}
+	.btn-large {
+		padding: 0.313rem 1rem;
+		font-size: 0.738rem;
+	}
+	.hero-slider h5{
+		font-size: .8rem;
+	}
+	.owl-theme .owl-nav.disabled+.owl-dots{
+		display:none;
+	}
+	
+	/*Theme Info*/
+	.contact-icon {
+		float: left !important;
+	}
+	.contact-info-module {
+		padding: 1.563rem 0rem !important;
+	}
+	
+}
